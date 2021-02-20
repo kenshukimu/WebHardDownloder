@@ -1,0 +1,14 @@
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\bin\Release\FTP_Client_Inc_Dll.exe.config
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\bin\Release\FTP_Client_Inc_Dll.exe
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\bin\Release\FTP_Client_Inc_Dll.pdb
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\bin\Release\Renci.SshNet.xml
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.FTPClientForm.resources
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.Properties.Resources.resources
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.WebLogView.resources
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.csproj.GenerateResource.cache
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.csproj.CoreCompileInputs.cache
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.csproj.CopyComplete
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.exe
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.pdb
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.csprojAssemblyReference.cache
+D:\상공회의소\SOURCE\기타프로그램\FTPClient_old\FTPClient\FTP_Client_Inc_Dll\obj\Release\FTP_Client_Inc_Dll.csproj.Fody.CopyLocal.cache

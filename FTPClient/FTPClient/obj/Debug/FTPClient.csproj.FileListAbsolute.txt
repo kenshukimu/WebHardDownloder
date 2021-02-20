@@ -1,0 +1,14 @@
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\bin\Debug\FTPClient.exe.config
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\bin\Debug\FTPClient.exe
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\bin\Debug\FTPClient.pdb
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\bin\Debug\Renci.SshNet.dll
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\bin\Debug\Renci.SshNet.xml
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.FTPClientForm.resources
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.Properties.Resources.resources
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.WebLogView.resources
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.csproj.GenerateResource.cache
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.csproj.CoreCompileInputs.cache
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.csproj.CopyComplete
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.exe
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.pdb
+D:\상공회의소\SOURCE\기타프로그램\FTPClient\FTPClient\FTPClient\obj\Debug\FTPClient.csprojAssemblyReference.cache
