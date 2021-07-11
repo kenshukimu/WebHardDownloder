@@ -43,8 +43,8 @@
             this.cheFtp = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(1310, 591);
+            this.webBrowser1.Size = new System.Drawing.Size(1310, 608);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://webdisk.korcham.net:7070/showMessage.do", System.UriKind.Absolute);
             // 
@@ -74,11 +74,12 @@
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(12, 632);
+            this.textBox1.Location = new System.Drawing.Point(14, 640);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(520, 32);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "저장할 위치를 선택하여 주시기 바랍니다.";
+            this.textBox1.Click += new System.EventHandler(this.button1_Click);
             // 
             // backgroundWorker1
             // 
@@ -87,7 +88,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.listView1);
@@ -104,14 +105,14 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.OrangeRed;
+            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
             this.button3.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(884, 12);
+            this.button3.Image = global::FTP_Client_Inc_Dll.Properties.Resources.cancel;
+            this.button3.Location = new System.Drawing.Point(909, 15);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(73, 45);
+            this.button3.Size = new System.Drawing.Size(48, 45);
             this.button3.TabIndex = 38;
-            this.button3.Text = "닫기";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -120,7 +121,7 @@
             this.button2.BackColor = System.Drawing.Color.SteelBlue;
             this.button2.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(750, 12);
+            this.button2.Location = new System.Drawing.Point(775, 15);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 45);
             this.button2.TabIndex = 37;
@@ -132,9 +133,9 @@
             // 
             this.listView1.Font = new System.Drawing.Font("나눔고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(16, 63);
+            this.listView1.Location = new System.Drawing.Point(16, 66);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(941, 286);
+            this.listView1.Size = new System.Drawing.Size(941, 283);
             this.listView1.TabIndex = 37;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -143,7 +144,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(514, 373);
+            this.label22.Location = new System.Drawing.Point(734, 373);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(88, 25);
             this.label22.TabIndex = 36;
@@ -153,33 +154,33 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Font = new System.Drawing.Font("NotoKR-Regular", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.SpringGreen;
             this.label21.Location = new System.Drawing.Point(22, 373);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(152, 25);
+            this.label21.Size = new System.Drawing.Size(143, 27);
             this.label21.TabIndex = 35;
             this.label21.Text = "다운로드 진행률";
             // 
             // cheFtp
             // 
             this.cheFtp.AutoSize = true;
-            this.cheFtp.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
-            this.cheFtp.Location = new System.Drawing.Point(11, 20);
+            this.cheFtp.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cheFtp.Location = new System.Drawing.Point(11, 17);
             this.cheFtp.Name = "cheFtp";
-            this.cheFtp.Size = new System.Drawing.Size(30, 25);
+            this.cheFtp.Size = new System.Drawing.Size(31, 25);
             this.cheFtp.TabIndex = 34;
             this.cheFtp.Text = "■";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(41, 27);
+            this.label20.Font = new System.Drawing.Font("NotoKR-Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(37, 17);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 15);
-            this.label20.TabIndex = 32;
-            this.label20.Text = "FTP수신처리";
+            this.label20.Size = new System.Drawing.Size(102, 27);
+            this.label20.TabIndex = 20;
+            this.label20.Text = "다운로드창";
             // 
             // progressBar1
             // 
@@ -187,18 +188,6 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(941, 50);
             this.progressBar1.TabIndex = 30;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("나눔고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(539, 631);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "폴더선택";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -210,12 +199,26 @@
             this.button4.TabIndex = 37;
             this.button4.Text = "로그확인";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Font = new System.Drawing.Font("나눔고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(538, 628);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(47, 54);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FTPClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1334, 685);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel1);
@@ -252,8 +255,8 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
 

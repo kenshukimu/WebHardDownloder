@@ -38,6 +38,10 @@ namespace FTP_Client_Inc_Dll
 
         public void ftpFileDownload(String files)
         {
+            label20.Text = " ";
+            label21.Text = " ";
+            progressBar1.Value = 0;
+
             String[] _files = files.Split('^');
 
             if (textBox1.Text.IndexOf("\\") < 1)
@@ -47,13 +51,17 @@ namespace FTP_Client_Inc_Dll
                 textBox1.Text = path;
             }
 
+            if (textBox1.Text.Length < 3)
+            {
+                MessageBox.Show("저장할 폴더을 선택하여 주시기 바랍니다.");
+                return;
+            }
+
             if (_files.Length == 1 && _files[0].Length < 2)
             {
                 MessageBox.Show("저장할 파일을 선택하여 주시기 바랍니다.");
                 return;
             }
-
-            panel1.Visible = true;
             label20.Text = "다운로드파일 : -";
 
             progressBar1.Style = ProgressBarStyle.Blocks;
@@ -61,23 +69,36 @@ namespace FTP_Client_Inc_Dll
 
             listView1.View = View.Details;
 
-            listView1.Columns.Add("파일명",700);
+            listView1.Columns.Add("파일명", 700);
             listView1.Columns.Add("상태", 200);
-            
+
+            int fileCount = 0;
+
             foreach (String _file in _files)
             {
                 String[] filePath = _file.Split('/');
                 String file = filePath[filePath.Length - 1];
 
                 Boolean _hangul = extendtionYN(file);
-               
+
                 if (Path.GetExtension(file) != null && !Path.GetExtension(file).Equals("") && !_hangul)
                 {
                     String[] _data = { file, "대기" };
                     ListViewItem item = new ListViewItem(_data);
                     listView1.Items.Add(item);
+
+                    ++fileCount;
                 }
             }
+
+            if (fileCount > 3)
+            {
+                listView1.Clear();
+                MessageBox.Show("한번에 4개이상의 파일 다운로드는 불가합니다.");
+                return;
+            }
+
+            panel1.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -92,7 +113,7 @@ namespace FTP_Client_Inc_Dll
         void downloadFileFtp(object sender, DoWorkEventArgs doWorkEventArgs)
         {
             String[] _downloadFIles = label1.Text.Split('^');
-           
+            
             ftpFileDownloadProcess(textBox1.Text, _downloadFIles);
         }
 
@@ -130,7 +151,7 @@ namespace FTP_Client_Inc_Dll
                                         }));
                                 }
 
-                                byte[] buffer = new byte[10 * 1024 * 1024];
+                                byte[] buffer = new byte[1 * 1024 * 1024];
                                 int read;
                                 long total = 0;
                                 while ((read = stream.Read(buffer, 0, buffer.Length)) > 0)
